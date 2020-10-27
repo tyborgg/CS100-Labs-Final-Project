@@ -17,14 +17,28 @@
  > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project?
- > * What are the three design patterns you will be using. For each design pattern you must:
- >   * Explain in 3 - 5 sentences why you picked this pattern and what feature you will implement with it
- > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+Project Proposal Phase 1
+Title: Maze Game
+
+Group Members: Andrew Middendorp, Tyler Pastor, TBA
+
+Project Description:
+Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
+Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
+
+Input/Output: 
+Input: User specified controls and future directional movement of their character
+Output: The animation of character movement/display directional movement
+
+Design Patterns: (Must pick two of these: Composite, Strategy, Abstract Factory, or Visitor)
+*Visitor
+Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
+*Strategy
+Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
+*Mediator
+Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
+
+
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to 
