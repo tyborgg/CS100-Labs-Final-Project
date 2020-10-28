@@ -20,7 +20,7 @@
 Project Proposal Phase 1
 Title: Maze Game
 
-Group Members: Andrew Middendorp, Tyler Pastor, TBA
+Group Members: Andrew Middendorp, Tyler Pastor, Daniel Nissan (Section 23)
 
 Project Description:
 Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
