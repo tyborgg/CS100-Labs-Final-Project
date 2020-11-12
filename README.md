@@ -24,6 +24,7 @@
 
 > Project Description:
 > Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
+
 > Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
 
 > Input/Output: 
@@ -32,11 +33,11 @@
 
 > Design Patterns: (Must pick two of these: Composite, Strategy, Abstract Factory, or Visitor)
 > * Visitor
->  * Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
+>   * Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
 > * Strategy
->  * Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
+>   * Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
 > * Mediator
->  * Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
+>   * Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
 
 
 
