@@ -4,7 +4,7 @@
 # \<Maze Game\>
  > Your author list below should include links to all members GitHub and should begin with a "\<" (remove existing author).
  
- > Authors: \<[Jeffrey McDaniel](https://github.com/jmcda001)\>
+ > Authors: Tyler Pastor, Andrew Middendorp, Daniel Nissan
  
  > You will be forming a group of **THREE** students and work on an interesting project that you will propose yourself (in this `README.md` document). You can pick any project that you'd like, but it needs ot implement three design patterns. Each of the members in a group is expected to work on at least one design pattern and its test cases. You can, of course, help each other, but it needs to be clear who will be responsible for which pattern and for which general project features.
  
@@ -16,27 +16,27 @@
  > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
  > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
 
-## Project Description
-Project Proposal Phase 1
-Title: Maze Game
+> ## Project Description
+> # Project Proposal Phase 1
+> # Title: Maze Game
 
-Group Members: Andrew Middendorp, Tyler Pastor, Daniel Nissan (Section 23)
+> Group Members: Andrew Middendorp, Tyler Pastor, Daniel Nissan (Section 23)
 
-Project Description:
-Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
-Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
+> Project Description:
+> Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
+> Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
 
-Input/Output: 
-Input: User specified controls and future directional movement of their character
-Output: The animation of character movement/display directional movement
+> Input/Output: 
+* Input: User specified controls and future directional movement of their character
+* Output: The animation of character movement/display directional movement
 
-Design Patterns: (Must pick two of these: Composite, Strategy, Abstract Factory, or Visitor)
-*Visitor
-Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
-*Strategy
-Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
-*Mediator
-Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
+> Design Patterns: (Must pick two of these: Composite, Strategy, Abstract Factory, or Visitor)
+> * Visitor
+>  * Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
+> * Strategy
+>  * Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
+> * Mediator
+>  * Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
 
 
 
