@@ -28,16 +28,16 @@
 > Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
 
 > Input/Output: 
-* Input: User specified controls and future directional movement of their character
-* Output: The animation of character movement/display directional movement
+> * Input: User specified controls, future directional movement of their character, and user input for menu options/mini games.
+> * Output: The animation of character movement/display directional movement and other interfaces(pause menu and mini games)
 
 > Design Patterns: (Must pick two of these: Composite, Strategy, Abstract Factory, or Visitor)
-> * Visitor
->   * Used to implement the character object. Visitor pattern is applied when many distinct operations are performed on an object, such as forward and backward movement of the user character. This pattern will also help keep track of the testing coordinates used to make sure that the correct movement is applied when the user moves the character.
+> * Abstract Factory
+>   * The Abstract Factory design pattern is used to create an interface which encapsulates a variety of different objects. The call to the different objects, such as pause menu, maze display, and mini game display can be found in the abstract factory pattern. It provides an organized call to each of the repsective classes based on the user input.
 > * Strategy
->   * Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space. Moreover, the implementation of each mini game may use some of the functions or operations.
-> * Mediator
->   * Mediator can be used to implement our maze and to keep the collection of objects in the maze from explicitly referring to another. This is a good choice because the structure of Mediator is for single, monolithic programs with many objects to interact with, like our maze. This will act as the “central control spot” for our maze class.
+>   * Strategy is used to implement the mini games at each location. The Strategy design pattern uses runtime decision to see which game is supposed to run at each space(the user choice). Moreover, the implementation of each mini game may use some of the functions or operations.
+> * Singleton
+>   * The Singleton pattern is best implemented when one class is instantiated once, which fits perfectly with the area/borders of the maze and the reusable pause menu interface.
 
 
 
