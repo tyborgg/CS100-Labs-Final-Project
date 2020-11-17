@@ -55,6 +55,7 @@
  > Include a class diagram(s) for each design pattern and a description of the diagram(s). This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper OMT notation (as discussed in the course slides). You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description). 
  
  <img src="images/minigames.png?raw=true" width="600">
+ > When the user lands on a “Mini Game” space throughout the maze, they are presented with a choice(play the game with the risk of losing health or gaining points OR they can skip the game for a loss of 30 points). The user interface for the mini game is prompted by the abstract factory strategy.
  <img src="images/singleton.png?raw=true" width="600">
  <img src="images/CS100AbstractFactoryDesignPattern.PNG?raw=true" width="600">
  
