@@ -57,6 +57,7 @@
  <img src="images/minigames.png?raw=true" width="600">
  > When the user lands on a “Mini Game” space throughout the maze, they are presented with a choice(play the game with the risk of losing health or gaining points OR they can skip the game for a loss of 30 points). The user interface for the mini game is prompted by the abstract factory strategy.
  <img src="images/singleton.png?raw=true" width="600">
+  Both the SetupMaze and the Menu classes should have just one instance each. The SetupMaze class will be called upon to setup the borders for the maze. The Menu class will be called to create a menu that gives the user options to save and load.
  <img src="images/CS100AbstractFactoryDesignPattern.PNG?raw=true" width="600">
  
  > ## Phase III
