@@ -56,7 +56,7 @@
  
  <img src="images/minigames.png?raw=true" width="1000">
  <img src="images/singleton.png?raw=true" width="600">
- <img src="images/CS100AbstractFactoryDesignPattern.png?raw=true" width="1000">
+ <img src="images/CS100AbstractFactoryDesignPattern.PNG?raw=true" width="1000">
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
