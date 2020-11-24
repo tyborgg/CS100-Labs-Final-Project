@@ -10,10 +10,10 @@ class PauseMenu
     private:
         static PauseMenu* instance;
         //private constructor
-        PauseMenu();
+        PauseMenu(){};
     public:
         static PauseMenu* getInstance();
-        
+        void outputMenu();
 };
 
 #endif

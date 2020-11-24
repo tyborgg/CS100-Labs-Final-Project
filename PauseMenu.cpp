@@ -8,3 +8,8 @@ PauseMenu* PauseMenu::getInstance(){
     }
     return instance;
 }
+
+void PauseMenu::outputMenu(){
+    cout << "PAUSED" << endl;
+    cout << "Select an option: " << "\n" << "s - save" << "\n" << "q - exit menu" << endl;
+}
