@@ -11,5 +11,13 @@ PauseMenu* PauseMenu::getInstance(){
 
 void PauseMenu::outputMenu(){
     cout << "PAUSED" << endl;
+
     cout << "Select an option: " << "\n" << "s - save" << "\n" << "q - exit menu" << endl;
+    
+    /*string selection = "";
+    cin >> selection;
+    if(selection == "s"){
+        save();
+    }*/
 }
+

@@ -14,6 +14,7 @@ class PauseMenu
     public:
         static PauseMenu* getInstance();
         void outputMenu();
+        //void save();
 };
 
 #endif
