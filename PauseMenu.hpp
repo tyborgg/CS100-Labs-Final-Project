@@ -13,8 +13,11 @@ class PauseMenu
         PauseMenu(){};
     public:
         static PauseMenu* getInstance();
+        int userControl();
         void outputMenu();
-        //void save();
+        void resume();
+        void save(int x, int y);
+        void exit();
 };
 
 #endif
