@@ -35,8 +35,11 @@ void PauseMenu::outputMenu(){
     
     string selection = "";
     cin >> selection;
-    if(selection == "s"){
+    if(selection == "q"){
         resume();
+    }
+    else if(selection == "s"){
+        save(1, 4);
     }
 }
 
