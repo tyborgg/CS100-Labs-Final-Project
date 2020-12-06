@@ -1,6 +1,10 @@
 #include "PauseMenu.hpp"
 
 PauseMenu* PauseMenu::instance = nullptr;
+/*
+PauseMenu::~PauseMenu(){
+    delete instance;
+}*/
 
 PauseMenu* PauseMenu::getInstance(){
     if (instance == nullptr){
@@ -20,7 +24,7 @@ int PauseMenu::userControl(){
     cout << "\n";
 
     cout << "To choose below option: ";
-    cin >> up;
+    cin >> down;
     cout << "\n";
 }
 
@@ -29,21 +33,22 @@ void PauseMenu::outputMenu(){
 
     cout << "Select an option: " << "\n" << "s - save" << "\n" << "q - exit menu" << endl;
     
-    /*string selection = "";
+    string selection = "";
     cin >> selection;
     if(selection == "s"){
-        save();
-    }*/
+        resume();
+    }
 }
 
 void PauseMenu::resume(){
     //resume the game
     //exit the pause menu
+    cout << "test" << endl;
+    delete instance;
 }
 
 void PauseMenu::save(int x, int y){
     /*read in coordinates
-    set x and y to the coordinates
     create text file to save the coordinates to*/
 }
 
