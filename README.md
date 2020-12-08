@@ -67,7 +67,7 @@
  > ## Singleton Pattern
  > <img src="images/singleton.png?raw=true" width="600">
  
- > Both the SetupMaze and the Menu classes should have just one instance each. The SetupMaze class will be called upon to setup the borders for the maze. The Menu class will be called to create a menu that gives the user options to save and load.
+ > Both the MinigameOptions and the PauseMenu classes should have just one instance each. The MinigameOptions class will be called upon to display a graphic urging the user to choose whether to play or skip the minigame. The PauseMenu class will be called to pause the game and display a menu graphic that will gave the user the ability to resume the game, save their progress, or exit to the start menu.
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
