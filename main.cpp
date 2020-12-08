@@ -1,19 +1,18 @@
-#include "PauseMenu.cpp"
+#include "PauseMenu.hpp"
+
 #include "minigameOptions.hpp"
-#include "header/GameStrategy.hpp"
-#include "header/Minigame_Compositor.hpp"
-#include "header/mockPlayer.hpp"
-#include "header/SkipStrategy.hpp"
-#include "header/Minigame_Strategy.hpp"
+
 #include <iostream>
 
 int main() {
-    PauseMenu* menu = menu->getInstance();
-    menu->outputMenu();
+    //PauseMenu* menu = menu->getInstance();
+    //menu->userControl();
+    //menu->outputMenu();
     //menu->resume();
+    //menu->save(1, 4);
 
-    //MinigameOptions* m = new MinigameOptions();
-    //m->getSelection();
+    MinigameOptions* m = new MinigameOptions();
+    m->userControl();
 
     //Player* player = new Player();
     //Minigame_Compositor* mc = new Minigame_Compositor("play", player);
