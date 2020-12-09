@@ -4,7 +4,7 @@
 using namespace std;
 
 class Interface {
-public:
+public: 
 	virtual int userControl() = 0;
 };
 #endif
