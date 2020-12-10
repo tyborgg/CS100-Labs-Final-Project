@@ -104,3 +104,4 @@
 >   * The GUI testing invovles valid and invalid input from user regarding user controls and character movement throughout the maze
 >   * Displayed in the images above show how the system interacts with the invalid user input
 >   * The use of cout statements help show that the correct images and videos are being displayed at each location and to help determine if the user trys to make a movement that is > >    out of the bounds of the maze
+>   * More testing images are located in the tpastImageTesting folder
