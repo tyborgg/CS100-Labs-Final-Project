@@ -102,3 +102,7 @@
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
+> * Minigame Testing
+> - The minigames were tested using one source file as a test suite.
+> - The first test takes user input in the same manner as it would in game, and the test checks to make sure that the required values are being updated.
+> - The second test makes sure that if a user loses enough health by losing minigames, that the program lets them know they died and that the game is over.
