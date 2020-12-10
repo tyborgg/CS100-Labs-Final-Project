@@ -1,4 +1,4 @@
-#include "PauseMenu.h"
+#include "PauseMenu.hpp"
 
 PauseMenu* PauseMenu::instance = nullptr;
 
