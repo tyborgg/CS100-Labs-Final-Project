@@ -110,6 +110,7 @@
 
 > * Pause Menu & Minigame Options Menu Testing
 >   * To test the individual functions in these classes, multiple test files were made, each of which tests a single function.
->   * For those functions which display a graphic, they were tested to see whether the image could be located, and if so, a letter would be printed pertaining to which direction >     and which image the user decides to move to.
+>   * For those functions which display a graphic, they were tested to see whether the image could be located, and if so, a letter would be printed pertaining to which direction
+>     and which image the user decides to move to.
 >   * The other functions do not have a return value, so they are tested on whether they save the correct information to a file, exit the menu and load it up at a later time, 
 >     and return the right count value for the userControl function.
