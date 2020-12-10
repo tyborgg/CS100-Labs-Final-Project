@@ -55,7 +55,7 @@
  > Include a class diagram(s) for each design pattern and a description of the diagram(s). This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper OMT notation (as discussed in the course slides). You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description). 
  
  > ## Abstract Factory Pattern
- > <img src="images/CS100AbstractFactoryDesignPattern.jpeg?raw=true" width="600">
+ > <img src="images/CS100AbstractFactoryDesignPattern.jpg?raw=true" width="600">
  
  > The Abstract Factory pattern encompasses our entire Maze Game project, due to its ability to call and display the correct interface based on the user movement and user choices. The pattern is used to create the borders and path of the maze(using the singleton class created by Daniel, which reads in a pre-set .txt file), displays the pause menu when chosen to do so by the user(implemented by Daniel with its own set of images and user controls), and the mini game interface(a choice interface to skip the game or play with the risk of losing character health which is implemented by Andrew).
  
