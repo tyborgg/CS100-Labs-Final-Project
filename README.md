@@ -25,7 +25,7 @@
 > Project Description:
 > Why is it interesting: We've been interested in creating a video game in c++ for quite some time and this project gives us the ability to test our skills in creating a beginner game. This beginner game contains basic user control and features, however, it is seen as a bit of a challenge with the skills we have acquired so far throughout our college experience. We are excited to try something new with the knowledge we’ve gained and other skills we have obtained.
 
-> Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software)
+> Languages/Tools/Technologies: C++, OpenCV, Blender(Possibly audio software) 
 
 > Input/Output: 
 > * Input: User specified controls, future directional movement of their character, and user input for menu options/mini games.
@@ -67,7 +67,7 @@
  > ## Singleton Pattern
  > <img src="images/singleton.png?raw=true" width="600">
  
- > Both the SetupMaze and the Menu classes should have just one instance each. The SetupMaze class will be called upon to setup the borders for the maze. The Menu class will be called to create a menu that gives the user options to save and load.
+ > Both the MinigameOptions and the PauseMenu classes should have just one instance each. The MinigameOptions class will be called upon to display a graphic urging the user to choose whether to play or skip the minigame. The PauseMenu class will be called to pause the game and display a menu graphic that will gave the user the ability to resume the game, save their progress, or exit to the start menu.
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
@@ -86,7 +86,7 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > Instructions on installing and running your application 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  

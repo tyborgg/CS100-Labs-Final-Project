@@ -108,17 +108,19 @@ string PauseMenu::outputMenu(int img){
 }
 
 void PauseMenu::resume(){
-    cout << "test" << endl;
+    //cout << "resuming" << endl;
     delete instance;
 }
 
 void PauseMenu::save(int x, int y){
-    cout << "test test test" << "\n" << endl;
+
+    cout << "saving" << "\n" << endl;
     
     ofstream savefile;
 
     savefile.open("save.txt", ios_base::app);
-    cout << x << " " << y << endl;
+
+    //cout << x << " " << y << endl;
     savefile << x << " " << y << endl;
     savefile.close();
 }

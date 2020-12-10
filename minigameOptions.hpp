@@ -20,6 +20,7 @@ class MinigameOptions {
         static MinigameOptions* getInstance();
         int userControl();
         string outputMenu(int img);
+
 };
 
 #endif
