@@ -80,10 +80,14 @@
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
+> Andrew Middendorp Testing:
+
 > * Minigame Testing
 >   * The minigames were tested using one source file as a test suite.
 >   * The first test takes user input in the same manner as it would in game, and the test checks to make sure that the required values are being updated.
 >   * The second test makes sure that if a user loses enough health by losing minigames, that the program lets them know they died and that the game is over.
+
+> Daniel Nissan Testing:
 
 > * Pause Menu & Minigame Options Menu Testing
 >   * To test the individual functions in these classes, multiple test files were made, each of which tests a single function.
@@ -91,3 +95,12 @@
 >     and which image the user decides to move to.
 >   * The other functions do not have a return value, so they are tested on whether they save the correct information to a file, exit the menu and load it up at a later time, 
 >     and return the right count value for the userControl function.
+
+> Tyler Pastor Testing: 
+
+> * Start Menu and Character Movement Testing(Based on user i/o)
+>   * I have included some test.cpp's which have modified some of the functions to show testing without GUI
+>   * These cpp files have return values with many scenarios of user input, respective return values, and interaction between a first time user
+>   * The GUI testing invovles valid and invalid input from user regarding user controls and character movement throughout the maze
+>   * Displayed in the images above show how the system interacts with the invalid user input
+>   * The use of cout statements help show that the correct images and videos are being displayed at each location and to help determine if the user trys to make a movement that is > >    out of the bounds of the maze
