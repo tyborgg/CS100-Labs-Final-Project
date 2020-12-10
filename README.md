@@ -107,3 +107,9 @@
 > - The minigames were tested using one source file as a test suite.
 > - The first test takes user input in the same manner as it would in game, and the test checks to make sure that the required values are being updated.
 > - The second test makes sure that if a user loses enough health by losing minigames, that the program lets them know they died and that the game is over.
+
+> * Pause Menu & Minigame Options Menu Testing
+>   * To test the individual functions in these classes, multiple test files were made, each of which tests a single function.
+>   * For those functions which display a graphic, they were tested to see whether the image could be located, and if so, a letter would be printed pertaining to which direction >     and which image the user decides to move to.
+>   * The other functions do not have a return value, so they are tested on whether they save the correct information to a file, exit the menu and load it up at a later time, 
+>     and return the right count value for the userControl function.
