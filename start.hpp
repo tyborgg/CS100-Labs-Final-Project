@@ -1,5 +1,5 @@
-#ifndef START_H
-#define START_H
+#ifndef START_HPP
+#define START_HPP
 
 #include "Interface.h"
 #include <iostream>		
