@@ -1,4 +1,4 @@
-#include "start.h"
+#include "start.hpp"
 
 int Start::userControl(){
 	string check = "";
@@ -15,7 +15,7 @@ int Start::userControl(){
 	}
 
 	newPlayer >> check;
-	cout << check << endl;
+	//cout << "Is the user a first time user: " << check << endl;
 	newPlayer.close();
 
 	ifstream show;
@@ -27,14 +27,16 @@ int Start::userControl(){
 	}
 
 	show >> choice;
-	cout << choice << endl;
+	//cout << "Will the control menu show or skip: " << choice << endl;
 	show.close();
-
+	
 	if (check == "Yes") {
 		ofstream setNo;
 		setNo.open("firstTime.txt");
 		setNo << "No";
-
+		setNo.close();
+		//Code ready to display a GUI welcome screen
+		/*
 		Mat image;
 		image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\welcome.png");
 
@@ -46,10 +48,16 @@ int Start::userControl(){
 		namedWindow("MazeGame", WINDOW_AUTOSIZE);
 		imshow("MazeGame", image);
 		waitKey(0);
+		*/
+		cout << "Welcome to the Maze Game!" << endl << endl;
+		cout << "Controls: " << endl << "p = pause" <<
+			endl << "Use your preset controls to switch between options and control your character" <<
+			endl << endl << "Objective: " << endl << "Get your character to the end of the Maze without losing all of your health" <<
+			endl << endl << "Goodluck! And HAVE FUN!" << endl << endl;
 
 		check = "No";
-		cout << check << endl;
-		cout << choice << endl;
+		//cout << check << endl;
+		//cout << choice << endl;
 	}
 	
 	if (check == "No" && choice == "Show") {		
@@ -60,30 +68,70 @@ int Start::userControl(){
 
 		while (control == "p" || control == "\t") {
 			control = controlsMenu("FWD");
+			/*cout << "Enter up control:" << endl;
+			cin >> control;
+
+			if (control == "p"){
+				cout << "Error" << endl;
+				return -1;
+			}
+			else {
+				control = "";
+			}*/
 		}
 		this->fwd = control;
 		cout << fwd << endl;
 		out << fwd << endl;
 		control = "p";
 
-		while (control == "p" || control == "\t") {
+		while (control == "p" || control == "\t" || control == fwd) {
 			control = controlsMenu("RT");
+			/*cout << "Enter right control:" << endl;
+			cin >> control;
+
+			if (control == "p" || control == fwd) {
+				cout << "Error" << endl;
+				return -1;
+			}
+			else {
+				control = "";
+			}*/
 		}
 		this->rt = control;
 		cout << rt << endl;
 		out << rt << endl;
 		control = "p";
 
-		while (control == "p" || control == "\t") {
+		while (control == "p" || control == "\t" || control == fwd || control == rt) {
 			control = controlsMenu("LT");
+			/*cout << "Enter left control:" << endl;
+			cin >> control;
+
+			if (control == "p" || control == fwd || control == rt) {
+				cout << "Error" << endl;
+				return -1;
+			}
+			else {
+				control = "";
+			}*/
 		}
 		this->lt = control;
 		cout << lt << endl;
 		out << lt << endl;
 		control = "p";
 
-		while (control == "p" || control == "\t") {
+		while (control == "p" || control == "\t" || control == fwd || control == rt || control == lt) {
 			control = controlsMenu("DWN");
+			/*cout << "Enter down control:" << endl;
+			cin >> control;
+
+			if (control == "p" || control == fwd || control == rt || control == lt) {
+				cout << "Error" << endl;
+				return -1;
+			}
+			else {
+				control = "";
+			}*/
 		}
 		this->dwn = control;
 		cout << dwn << endl;
@@ -210,6 +258,8 @@ string Start::screen(int img) {
 
 	char input = waitKey(0);
 
+	cout << "Start screen input: " << input << endl;
+
 	stringstream ss;
 	ss << input;
 	string s = ss.str();
@@ -227,11 +277,13 @@ string Start::controlsMenu(string control) {
 		return "ERROR";
 	}
 
-	resize(image, image, Size(), 2.2, 2.2);
+	resize(image, image, Size(), 0.8, 0.8);
 	namedWindow("MazeGame", WINDOW_AUTOSIZE);
 	imshow("MazeGame", image);
 
 	input = waitKey(0);
+
+	cout << "Control Menu Input: " << input << endl;
 
 	stringstream ss;
 	ss << input;
@@ -252,11 +304,13 @@ string Start::showMSG(int img) {
 		return "ERROR";
 	}
 
-	resize(image, image, Size(), 1.2, 1.2);
+	resize(image, image, Size(), 0.8, 0.8);
 	namedWindow("MazeGame", WINDOW_AUTOSIZE);
 	imshow("MazeGame", image);
 
 	char input = waitKey(0);
+
+	cout << "Control option Input: " << input << endl;
 
 	stringstream ss;
 	ss << input;
