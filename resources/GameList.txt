@@ -1,0 +1,5 @@
+What is 2+2?
+What is 5 * 7?
+Is the number 3 an integer?
+Is the number sqrt(2) an integer?
+Is the number sqrt(4) an integer?

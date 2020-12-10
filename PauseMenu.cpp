@@ -113,11 +113,13 @@ void PauseMenu::resume(){
 }
 
 void PauseMenu::save(int x, int y){
+
     cout << "saving" << "\n" << endl;
     
     ofstream savefile;
 
     savefile.open("save.txt", ios_base::app);
+
     //cout << x << " " << y << endl;
     savefile << x << " " << y << endl;
     savefile.close();
