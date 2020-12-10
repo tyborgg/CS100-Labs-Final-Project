@@ -93,6 +93,7 @@
  > <img src="daniel-tests/Screenshot_5.png?raw=true" width="600">
  > <img src="daniel-tests/Screenshot_6.png?raw=true" width="600">
  > <img src="daniel-tests/Screenshot_7.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_8.png?raw=true" width="600">
  
  > * Andrew's Screenshot:
  > <img src="images/MinigameTest.png?raw=true" width="600">
