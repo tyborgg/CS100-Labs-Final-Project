@@ -86,7 +86,14 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  > * Daniel's Screenshots:
- > <img src="daniel-tests/Screenshot_1.png?raw=true" width="500">
+ > <img src="daniel-tests/Screenshot_1.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_2.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_3.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_4.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_5.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_6.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_7.png?raw=true" width="600">
+ 
  ## Installation/Usage
  > Instructions on installing and running your application 
  ## Testing
