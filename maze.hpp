@@ -1,5 +1,5 @@
-#ifndef MAZE_H
-#define MAZE_H
+#ifndef MAZE_HPP
+#define MAZE_HPP
 
 #include "Interface.h"
 #include <iostream>		
