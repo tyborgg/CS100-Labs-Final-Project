@@ -85,8 +85,32 @@
  > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
  ## Screenshots
  > Screenshots of the input/output after running your application
+ > * Daniel's Screenshots:
+ > <img src="daniel-tests/Screenshot_1.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_2.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_3.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_4.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_5.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_6.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_7.png?raw=true" width="600">
+ > <img src="daniel-tests/Screenshot_8.png?raw=true" width="600">
+ 
+ > * Andrew's Screenshot:
+ > <img src="images/MinigameTest.png?raw=true" width="600">
+ 
  ## Installation/Usage
  > Instructions on installing and running your application 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
+> * Minigame Testing
+>   * The minigames were tested using one source file as a test suite.
+>   * The first test takes user input in the same manner as it would in game, and the test checks to make sure that the required values are being updated.
+>   * The second test makes sure that if a user loses enough health by losing minigames, that the program lets them know they died and that the game is over.
+
+> * Pause Menu & Minigame Options Menu Testing
+>   * To test the individual functions in these classes, multiple test files were made, each of which tests a single function.
+>   * For those functions which display a graphic, they were tested to see whether the image could be located, and if so, a letter would be printed pertaining to which direction
+>     and which image the user decides to move to.
+>   * The other functions do not have a return value, so they are tested on whether they save the correct information to a file, exit the menu and load it up at a later time, 
+>     and return the right count value for the userControl function.
