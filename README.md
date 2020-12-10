@@ -60,6 +60,8 @@
  > * Andrew's Screenshot:
  > <img src="images/MinigameTest.png?raw=true" width="600">
  
+  > * Tyler's Screenshots:
+ 
  ## Installation/Usage
  > Instructions on installing and running your application: 
  
