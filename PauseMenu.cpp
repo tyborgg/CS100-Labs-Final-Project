@@ -1,31 +1,52 @@
-#include "PauseMenu.hpp"
+#include "PauseMenu.h"
 
 PauseMenu* PauseMenu::instance = nullptr;
-/*
-PauseMenu::~PauseMenu(){
-    delete instance;
-}*/
 
-PauseMenu* PauseMenu::getInstance(){
-    if (instance == nullptr){
+PauseMenu* PauseMenu::getInstance() {
+    if (instance == nullptr) {
         instance = new PauseMenu();
     }
     return instance;
 }
 
-int PauseMenu::userControl(){
-    ifstream input("controls.txt");
+int PauseMenu::userControl() {
     string up;
+    string right;
+    string left;
     string down;
+    string dir = "";
+    string temp = "";
+    int currX;
+    int currY;
 
+    ifstream coord;
+  
+    coord.open("coordinate.txt");
+    coord >> currX;
+    coord >> currY;
+    coord.close();
+
+    coord.open("direction.txt");
+    while (coord >> temp) {
+        dir += temp;
+    }
+    coord.close();
+
+    cout << currX << endl;
+    cout << currY << endl;
+    cout << dir << endl;
+
+    ifstream input("controls.txt");
     input >> up;
+    input >> right;
+    input >> left;
     input >> down;
     input.close();
 
     int count = 5;
 
     string userInput = outputMenu(count);
-    
+
     while (userInput != "\r") {
         if (userInput == up) {
             if (count == 7) {
@@ -36,7 +57,7 @@ int PauseMenu::userControl(){
                 userInput = outputMenu(5);
                 count = 5;
             }
-            else{
+            else {
                 userInput = outputMenu(5);
                 count = 5;
             }
@@ -75,53 +96,54 @@ int PauseMenu::userControl(){
         resume();
     }
     else if (count == 6) {
-        save(1, 4);
+        save(currX, currY, dir);
     }
-
 
     return count;
 }
 
-string PauseMenu::outputMenu(int img){
+string PauseMenu::outputMenu(int img) {
     Mat image;
 
     string num = to_string(img);
 
-    image = imread("C:\\Users\\danny_000\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\pm\\" + num + ".png");
+    image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\" + num + ".png");
+
     if (image.empty()) {
-        cout << "Image not found." << endl;
-        exit(0);
-        return "Error";
+        cout << "Image was not successfully loaded!" << endl;
+        return "ERROR";
     }
+
     resize(image, image, Size(), 0.8, 0.8);
-    namedWindow("Pause Menu", WINDOW_AUTOSIZE);
-    imshow("Pause Menu", image);
+    namedWindow("MazeGame", WINDOW_AUTOSIZE);
+    imshow("MazeGame", image);
 
     char input = waitKey(0);
-    
+
     stringstream ss;
     ss << input;
     string s = ss.str();
 
-    destroyWindow("C:\\Users\\danny_000\\Desktop\\ConsoleApplication1\\ConsoleApplication1\\pm\\" + num + ".png");
     return s;
 }
 
-void PauseMenu::resume(){
-    //cout << "resuming" << endl;
+void PauseMenu::resume() {
     delete instance;
 }
 
-void PauseMenu::save(int x, int y){
-
+void PauseMenu::save(int x, int y, string str) {
     cout << "saving" << "\n" << endl;
-    
+
+    string saveX = to_string(x);
+    string saveY = to_string(y);
+
     ofstream savefile;
 
-    savefile.open("save.txt", ios_base::app);
+    savefile.open("coordinate.txt");
+    savefile << x << " " << y;
+    savefile.close();
 
-    //cout << x << " " << y << endl;
-    savefile << x << " " << y << endl;
+    savefile.open("direction.txt");
+    savefile << str;
     savefile.close();
 }
-
