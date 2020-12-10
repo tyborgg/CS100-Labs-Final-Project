@@ -1,5 +1,5 @@
-#ifndef INTERFACE_H
-#define INTERFACE_H
+#ifndef INTERFACE_HPP
+#define INTERFACE_HPP
 
 using namespace std;
 
