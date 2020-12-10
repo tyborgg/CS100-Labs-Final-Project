@@ -86,7 +86,7 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  > * Daniel's Screenshots:
- > <img src="daniel-tests/Screenshot_1.png?raw=true" width="400">
+ > <img src="daniel-tests/Screenshot_1.png?raw=true" width="500">
  ## Installation/Usage
  > Instructions on installing and running your application 
  ## Testing
