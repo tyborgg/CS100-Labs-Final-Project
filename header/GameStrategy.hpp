@@ -25,7 +25,7 @@ public:
 	GameStrategy()
 	{
 		string line;
-		ifstream input("../resources/GameList.txt");
+		ifstream input("GameList.txt");
 		if (input.is_open())
 		{
 			while (getline(input, line))
@@ -36,7 +36,7 @@ public:
 		input.close();
 
 
-		ifstream input2("../resources/GameAnswers.txt");
+		ifstream input2("GameAnswers.txt");
 		if (input2.is_open())
 		{
 			while (getline(input2, line))
@@ -52,7 +52,7 @@ public:
 		if (choice == "play")
 		{
 			string line;
-			ifstream input("../resources/GameList.txt");
+			ifstream input("GameList.txt");
 			if (input.is_open())
 			{
 				while (getline(input, line))
@@ -62,7 +62,7 @@ public:
 			}
 			input.close();
 
-			ifstream input2("../resources/GameAnswers.txt");
+			ifstream input2("GameAnswers.txt");
 			if (input2.is_open())
 			{
 				while (getline(input2, line))
@@ -90,7 +90,7 @@ public:
 	virtual void healthPenalty()
 	{
 		playerObj->setHealth(playerObj->getHealth() - 20);
-		if(playerObj->getHealth() <= 0)
+		if (playerObj->getHealth() <= 0)
 		{
 			cout << "You have lost all of your health!" << endl;
 			cout << "GAME OVER!" << endl;
