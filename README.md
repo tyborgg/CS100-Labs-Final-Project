@@ -100,6 +100,8 @@
  
  ## Installation/Usage
  > Instructions on installing and running your application 
+ > In order to run the Maze Game a few things must be installed to your local machine. The first thing is an IDE that has the capability to run c++ code(Visual Studios - Community). Once you have installed that, you are going to want to download the free open source library used for the program called OpenCV. Follow the instructions on how to properly include all libraries and respective includes for your IDE. Lastly, you must download all images and video files to a known location on your local machine. These paths to these image and video files will allow specific images and/or videos to be displauyed based on the user input. Thank you for reading! Happy gaming and enjoy...
+ >#THE MAZE GAME
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
