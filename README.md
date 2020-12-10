@@ -1,22 +1,7 @@
- > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\<"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Maze Game
- > Your author list below should include links to all members GitHub and should begin with a "\<" (remove existing author).
- 
- > Authors: Tyler Pastor, Andrew Middendorp, Daniel Nissan
- 
- > You will be forming a group of **THREE** students and work on an interesting project that you will propose yourself (in this `README.md` document). You can pick any project that you'd like, but it needs ot implement three design patterns. Each of the members in a group is expected to work on at least one design pattern and its test cases. You can, of course, help each other, but it needs to be clear who will be responsible for which pattern and for which general project features.
- 
- > ## Expectations
- > * Incorporate **three** distinct design patterns, *two* of the design patterns need to be taught in this course:
- >   * Composite, Strategy, Abstract Factory, Visitor
- > * All three design patterns need to be linked together (it can't be three distinct projects)
- > * Your project should be implemented in C/C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
 
-> ## Project Description
+ > Authors: Tyler Pastor, Andrew Middendorp, Daniel Nissan
+
 > # Project Proposal Phase 1
 > # Title: Maze Game
 
@@ -42,22 +27,11 @@
 
 
  > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to 
- > * Set up your GitHub project board as a Kanban board for the project. It should have columns that map roughly to 
- >   * Backlog, TODO, In progress, In testing, Done
- >   * You can change these or add more if you'd like, but we should be able to identify at least these.
- > * There is no requirement for automation in the project board but feel free to explore those options.
- > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Create smaller development tasks as issues and assign them to team members. Place these in the `Backlog` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
-## Class Diagram
- > Include a class diagram(s) for each design pattern and a description of the diagram(s). This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper OMT notation (as discussed in the course slides). You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description). 
  
  > ## Abstract Factory Pattern
- > <img src="images/CS100AbstractFactoryDesignPattern.PNG?raw=true" width="600">
+ > <img src="images/CS100AbstractFactoryPattern.jpg?raw=true" width="600">
  
- > The Abstract Factory pattern encompasses our entire Maze Game project, due to its ability to call and display the correct interface based on the user movement and user choices. The pattern is used to create the borders and path of the maze(using the singleton class created by Daniel, which reads in a pre-set .txt file), displays the pause menu when chosen to do so by the user(implemented by Daniel with its own set of images and user controls), and the mini game interface(a choice interface to skip the game or play with the risk of losing character health which is implemented by Andrew).
+ > The Abstract Factory pattern encompasses our entire Maze Game project, due to its ability to call and display the correct interface based on the user movement and user choices. The pattern is used to create the borders and path of the maze(using the singleton class created by Me, which reads in a pre-set .txt file), displays the pause menu when chosen to do so by the user(implemented by Daniel with its own set of images and user controls), a start Menu(implemented by Me), and the mini game interface(a choice interface to skip the game or play with the risk of losing character health which is implemented by Daniel).
  
  > ## Strategy Pattern
  > <img src="images/minigames.png?raw=true" width="600">
@@ -68,21 +42,9 @@
  > <img src="images/singleton.png?raw=true" width="600">
  
  > Both the MinigameOptions and the PauseMenu classes should have just one instance each. The MinigameOptions class will be called upon to display a graphic urging the user to choose whether to play or skip the minigame. The PauseMenu class will be called to pause the game and display a menu graphic that will gave the user the ability to resume the game, save their progress, or exit to the start menu.
- 
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II
- > * In the meeting with your TA you will discuss: 
- >   - How effective your last sprint was (each member should talk about what they did)
- >   - Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- >   - Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- >   - What tasks you are planning for this next sprint.
 
  > ## Final deliverable
- > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
+ 
  ## Screenshots
  > Screenshots of the input/output after running your application
  > * Daniel's Screenshots:
@@ -98,15 +60,34 @@
  > * Andrew's Screenshot:
  > <img src="images/MinigameTest.png?raw=true" width="600">
  
+  > * Tyler's Screenshots:
+  > <img src="tpast001ImageTesting/Test1.1.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/Test1.3.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/Test1.5.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/Test2.1.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/2.2.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/2.4.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/3.1.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/3.4.jpg?raw=true" width="600">
+  > <img src="tpast001ImageTesting/3.6.jpg?raw=true" width="600">
+     
  ## Installation/Usage
- > Instructions on installing and running your application 
+ > Instructions on installing and running your application: 
+ 
+ > In order to run the Maze Game a few things must be installed to your local machine. The first thing is an IDE that has the capability to run c++ code(Visual Studios - Community). Once you have installed that, you are going to want to download the free open source library used for the program called OpenCV. Follow the instructions on how to properly include all libraries and respective includes for your IDE. Lastly, you must download all images and video files to a known location on your local machine. These paths to these image and video files will allow specific images and/or videos to be displauyed based on the user input. Thank you for reading! Happy gaming and enjoy...
+ # THE MAZE GAME
+ 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
+> Andrew Middendorp Testing:
+
 > * Minigame Testing
 >   * The minigames were tested using one source file as a test suite.
 >   * The first test takes user input in the same manner as it would in game, and the test checks to make sure that the required values are being updated.
 >   * The second test makes sure that if a user loses enough health by losing minigames, that the program lets them know they died and that the game is over.
+
+> Daniel Nissan Testing:
 
 > * Pause Menu & Minigame Options Menu Testing
 >   * To test the individual functions in these classes, multiple test files were made, each of which tests a single function.
@@ -114,3 +95,13 @@
 >     and which image the user decides to move to.
 >   * The other functions do not have a return value, so they are tested on whether they save the correct information to a file, exit the menu and load it up at a later time, 
 >     and return the right count value for the userControl function.
+
+> Tyler Pastor Testing: 
+
+> * Start Menu and Character Movement Testing(Based on user i/o)
+>   * I have included some test.cpp's which have modified some of the functions to show testing without GUI
+>   * These cpp files have return values with many scenarios of user input, respective return values, and interaction between a first time user
+>   * The GUI testing invovles valid and invalid input from user regarding user controls and character movement throughout the maze
+>   * Displayed in the images above show how the system interacts with the invalid user input
+>   * The use of cout statements help show that the correct images and videos are being displayed at each location and to help determine if the user trys to make a movement that is > >    out of the bounds of the maze
+>   * More testing images are located in the tpastImageTesting folder

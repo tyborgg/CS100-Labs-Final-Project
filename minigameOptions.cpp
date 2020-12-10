@@ -14,8 +14,12 @@ int MinigameOptions::userControl() {
     ifstream input("controls.txt");
     string up;
     string down;
+    string right;
+    string left;
 
     input >> up;
+    input >> right;
+    input >> left;
     input >> down;
     input.close();
 
@@ -63,15 +67,16 @@ string MinigameOptions::outputMenu(int img) {
 
     string num = to_string(img);
 
-    image = imread("C:\\Users\\danny_000\\Desktop\\cs100proj\\" + num + ".png");
+    image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\" + num + ".png");
     if (image.empty()) {
         cout << "Image not found." << endl;
         exit(0);
         return "Error";
     }
+
     resize(image, image, Size(), 0.8, 0.8);
-    namedWindow("Minigame Options", WINDOW_AUTOSIZE);
-    imshow("Minigame Options", image);
+    namedWindow("MazeGame", WINDOW_AUTOSIZE);
+    imshow("MazeGame", image);
 
     char input = waitKey(0);
 
@@ -79,6 +84,5 @@ string MinigameOptions::outputMenu(int img) {
     ss << input;
     string s = ss.str();
 
-    destroyWindow("C:\\Users\\danny_000\\Desktop\\cs100proj\\" + num + ".png");
     return s;
 }

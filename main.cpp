@@ -1,21 +1,72 @@
+#include <iostream>		
+#include <string>
+#include <sstream>
+#include "start.hpp"
+#include "maze.hpp"
 #include "PauseMenu.hpp"
-
 #include "minigameOptions.hpp"
+#include "Minigame_Compositor.hpp"
+#include "mockPlayer.hpp"
 
-#include <iostream>
+using namespace std;
+using namespace cv;
+
 
 int main() {
-    //PauseMenu* menu = menu->getInstance();
-    //menu->userControl();
-    //menu->outputMenu();
-    //menu->resume();
-    //menu->save(1, 4);
+	Start start;
+	int input;
+	int choice;
+	int pause;
+	int mini;
+	PauseMenu pauseM;
+	MinigameOptions game;
+	Player* p1 = new Player();
+	Minigame_Compositor* comp1 = new Minigame_Compositor();
+	
+	
+	choice = start.userControl();
 
-    MinigameOptions* m = new MinigameOptions();
-    m->userControl();
+	if (choice == 1) {
+		cout << "read in save coordinate from .txt file" << endl; 
+	}
+	else if (choice == 0) {
+		ofstream start;
+		start.open("coordinate.txt");
+		start << "0 0";
+		start.close();
+		start.open("direction.txt");
+		start << "";
+		start.close();
+	}
 
-    //Player* player = new Player();
-    //Minigame_Compositor* mc = new Minigame_Compositor("play", player);
+	Maze maze;
+	input = maze.userControl();
 
-    return 0;
+	while (input != 0) {
+		if (input == 1) {			
+			pause = pauseM.userControl();
+			if (pause == 5) {
+				input = maze.userControl();
+			}
+			else if (pause == 6) {
+				input = maze.userControl();
+			}
+			else {
+				input = 0;
+			}
+		}
+		else if (input == 2) {		
+			mini = game.userControl();
+			if (mini == 2) {
+				comp1->play(p1);
+				input = maze.userControl();
+			}
+			else {
+				comp1->skip(p1);
+				input = maze.userControl();
+			}
+		}
+	}
+
+	return 0;
 }

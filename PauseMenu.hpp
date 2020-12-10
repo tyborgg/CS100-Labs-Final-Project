@@ -16,10 +16,8 @@ class PauseMenu
 {
     private:
         static PauseMenu* instance;
-        //private constructor
-        PauseMenu(){};
-        //~PauseMenu();
     public:
+        PauseMenu(){};
         static PauseMenu* getInstance();
         int userControl();
         string outputMenu(int img);
