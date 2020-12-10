@@ -11,7 +11,7 @@ public:
 
 	Player()
 	{
-		this->points = 0;
+		this->points = 30;
 		this->health = 100;
 	}
 	void setHealth(int num)
