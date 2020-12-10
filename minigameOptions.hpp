@@ -16,7 +16,6 @@ class MinigameOptions {
     public:
         static MinigameOptions* instance;
         MinigameOptions() {};
-    //public:
         static MinigameOptions* getInstance();
         int userControl();
         string outputMenu(int img);
