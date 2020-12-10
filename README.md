@@ -95,7 +95,7 @@
  > <img src="daniel-tests/Screenshot_7.png?raw=true" width="600">
  
  > * Andrew's Screenshot:
- > <img src="images/MinigameTest.PNG?raw=true" width="600">
+ > <img src="images/MinigameTest.png?raw=true" width="600">
  
  ## Installation/Usage
  > Instructions on installing and running your application 
