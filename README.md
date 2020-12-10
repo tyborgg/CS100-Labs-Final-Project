@@ -55,7 +55,7 @@
  > Include a class diagram(s) for each design pattern and a description of the diagram(s). This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper OMT notation (as discussed in the course slides). You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description). 
  
  > ## Abstract Factory Pattern
- > <img src="images/CS100AbstractFactoryDesignPattern.PNG?raw=true" width="600">
+ > <img src="images/CS100AbstractFactoryDesignPattern.jpeg?raw=true" width="600">
  
  > The Abstract Factory pattern encompasses our entire Maze Game project, due to its ability to call and display the correct interface based on the user movement and user choices. The pattern is used to create the borders and path of the maze(using the singleton class created by Daniel, which reads in a pre-set .txt file), displays the pause menu when chosen to do so by the user(implemented by Daniel with its own set of images and user controls), and the mini game interface(a choice interface to skip the game or play with the risk of losing character health which is implemented by Andrew).
  
@@ -101,7 +101,7 @@
  ## Installation/Usage
  > Instructions on installing and running your application 
  > In order to run the Maze Game a few things must be installed to your local machine. The first thing is an IDE that has the capability to run c++ code(Visual Studios - Community). Once you have installed that, you are going to want to download the free open source library used for the program called OpenCV. Follow the instructions on how to properly include all libraries and respective includes for your IDE. Lastly, you must download all images and video files to a known location on your local machine. These paths to these image and video files will allow specific images and/or videos to be displauyed based on the user input. Thank you for reading! Happy gaming and enjoy...
- >#THE MAZE GAME
+ >##THE MAZE GAME
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
