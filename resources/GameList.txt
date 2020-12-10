@@ -3,3 +3,8 @@ What is 5 * 7?
 Is the number 3 an integer?
 Is the number sqrt(2) an integer?
 Is the number sqrt(4) an integer?
+Is 7 a prime number?
+Is 1 a prime number?
+Is 8 evenly divisible by 3?
+What is 8 * 4?
+What year did the United States declare independence?
