@@ -1,4 +1,4 @@
-#include "maze.h"
+#include "maze.hpp"
 
 Maze* Maze::instance = nullptr;
 
@@ -80,13 +80,13 @@ int Maze::userControl(){
 	point = tempX + tempY + dir;
 
 	Mat image;
-	image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\00.png");
+	image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\"  + point  + ".jpg");
 
 	if (image.empty()) {
 		cout << "Image was not successfully loaded!" << endl;
 	}
 
-	resize(image, image, Size(), 0.8, 0.8);
+	//resize(image, image, Size(), 0.8, 0.8);
 	namedWindow("MazeGame", WINDOW_AUTOSIZE);
 	imshow("MazeGame", image);
 
@@ -97,7 +97,7 @@ int Maze::userControl(){
 	string input = ss.str();
 
 	while (input != "p") {
-		if (input == fwd && (currX != 0 || currY != 4) && (currX != 1 || currY != 6) && (currX != -1 || currY != 6)) {
+		if (input == fwd && (currX != 0 || currY != 3) && (currX != 1 || currY != 7) && (currX != -1 || currY != 7)) {
 			valid = search(currX, currY);
 
 			if (valid == true) {
@@ -106,10 +106,9 @@ int Maze::userControl(){
 				input = display(currX, currY, dir);
 			}
 			cout << "cuurX = " << currX << endl;
-			cout << "lol" << endl;
 			cout << "cuurY = " << currY << endl;
 		}
-		else if (input == rt && ((currX == 0 && currY == 4) || (currX == 1 && currY == 6) || (currX == -1 && currY == 6))) {
+		else if (input == rt && ((currX == 0 && currY == 3) || (currX == 1 && currY == 7) || (currX == -1 && currY == 7))) {
 			dir += "r";
 			currX++;
 			cout << "currX " << currX << endl;
@@ -126,7 +125,7 @@ int Maze::userControl(){
 			cout << "currX = " << currX << endl;
 			cout << "currY = " << currY << endl;
 		}
-		else if (input == lt && ((currX == 0 && currY == 4) || (currX == 1 && currY == 6) || (currX == -1 && currY == 6))) {
+		else if (input == lt && ((currX == 0 && currY == 3) || (currX == 1 && currY == 7) || (currX == -1 && currY == 7))) {
 			dir += "l";
 			currX--;
 			valid = search(-currX, currY);
@@ -140,14 +139,15 @@ int Maze::userControl(){
 				input = displayImage(currX, currY, dir);
 			}
 		}
-		else if (input == dwn && ((currX == 1 && currY == 4) || (currX == -1 && currY == 4) || (currX == 2 && currY == 6) || (currX == -2 && currY == 6) || (currX == 0 && currY == 6))) {
+		//This if statement is used for future sprints(to display a hidden animation for the user)
+		/*else if (input == dwn && ((currX == 1 && currY == 3) || (currX == -1 && currY == 3) || (currX == 2 && currY == 6) || (currX == -2 && currY == 6) || (currX == 0 && currY == 6))) {
 			input = displayEasterEgg(currX, currY, dir);
-		}
+		}*/
 		else {
 			input = displayImage(currX, currY, dir);
 		}
 
-		if (currY == 7) {
+		if (currY == 9) {
 			ofstream restart;
 			restart.open("coordinate.txt");
 			restart << "0 0";
@@ -229,11 +229,31 @@ string Maze::display(int x, int y, string str) {
 				break;
 	}
 
-	if ((x == 0 && y == 3) || (x == 1 && y == 6) || (x == -2 && y == 7)) {
+	if ((x == 0 && y == 2) || (x == 1 && y == 5) || (x == -1 && y == 5) || (x == 2 && y == 8) || (x == -2 && y == 8) || (x == 0 && y == 8)) {
 		return "game";
 	}
 
+	if (y == 9) {
+		Mat image;
+
+		image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\GameOver.jpg");
+
+		if (image.empty()) {
+			cout << "Image was not successfully loaded!" << endl;
+			return "ERROR";
+		}
+
+		namedWindow("MazeGame", WINDOW_AUTOSIZE);
+		imshow("MazeGame", image);
+
+		waitKey(5000);
+
+		return fwd;
+	}
+
 	c = waitKey(0);
+
+	cout << "Display video input: " << c << endl;
 
 	stringstream ss;
 	ss << c;
@@ -261,6 +281,8 @@ string Maze::displayImage(int x, int y, string str) {
 	imshow("MazeGame", image);
 
 	char input = waitKey(0);
+	cout << "Display image input: " << input << endl;
+	cout << "Also used for invalid input!" << endl << endl;
 
 	stringstream ss;
 	ss << input;
@@ -277,7 +299,7 @@ string Maze::displayEasterEgg(int x, int y, string str) {
 	string all = num1 + num2 + str;
 	cout << "all: " << all << endl;
 
-	image = imread("C:\\Users\\tyler\\Downloads\\MazeGameStartScreenPractice\\controlDWN.png");
+	image = imread("C:\\Users\\tyler\\Downloads\\MazeGameImages\\EasterEggAnimation.jpg");
 
 	if (image.empty()) {
 		cout << "Image was not successfully loaded!" << endl;
