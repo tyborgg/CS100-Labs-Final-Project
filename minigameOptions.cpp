@@ -1,4 +1,4 @@
-#include "minigameOptions.h"
+#include "minigameOptions.hpp"
 
 MinigameOptions* MinigameOptions::instance = nullptr;
 
