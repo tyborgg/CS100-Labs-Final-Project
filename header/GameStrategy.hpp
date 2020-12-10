@@ -90,6 +90,11 @@ public:
 	virtual void healthPenalty()
 	{
 		playerObj->setHealth(playerObj->getHealth() - 20);
+		if(playerObj->getHealth() <= 0)
+		{
+			cout << "You have lost all of your health!" << endl;
+			cout << "GAME OVER!" << endl;
+		}
 	}
 
 	virtual void display()
